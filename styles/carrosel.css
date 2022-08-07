@@ -1,0 +1,131 @@
+.carousel__title {
+    color: var(--orange);
+    background-color: var(--white);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 1em 0;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, 
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5em 0;
+}
+
+
+/*Card section*/
+
+.card {
+    margin: 1em;
+    padding: 1em;
+    background: var(--white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.card__description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description {
+    padding: 0 0.6em 0 0;
+}
+
+.description__title {
+    font-weight: 700;
+    color: var(--orange);
+}
+
+.description__title-book {
+    color: var(--blue);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+.description__text {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.card__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5em;
+}
+
+.button {
+    display: flex;
+}
+
+.button__items {
+    margin: 0 0.5em;
+}
+
+.button__anchors {
+    background-color: var(--orange);
+    padding: 1em 2.2em;
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .carousel__title {
+        font-size: 26px;
+    }
+
+    .swiper-pagination {
+        margin: 2em 0 1em 0;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: block;
+    }
+
+    .card {
+        width: 50%;
+        margin: 2em auto;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .carousel__container {
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+    }
+    
+    .swiper {
+        width: 50%;
+        margin-right: 4em;
+    }
+
+    .swiper-pagination {
+        margin: 1em 0;
+    }
+
+    .description__title {
+        font-size: 28px;
+    }
+
+    .description__text {
+        font-size: 16px;
+    }
+}
